@@ -1,0 +1,22 @@
+[project]
+name = "streamlit-ml"
+version = "0.1.0"
+description = "Aplicación Streamlit para clasificar dígitos a partir de un lienzo y tres modelos ML entrenados en MNIST"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "streamlit",
+    "streamlit-drawable-canvas",
+    "Pillow",
+    "joblib",
+]
+
+[project.scripts]
+streamlit-ml = "streamlit_ml:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
